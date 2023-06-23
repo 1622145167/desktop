@@ -1,11 +1,5 @@
 {
-  "publish": [
-    {
-    "provider": "generic",
-    "url": "https://releases.mattermost.com/desktop"
-    }
-  ],
-  "appId": "Mattermost.Desktop",
+  "appId": "Weidiguo.Desktop",
   "artifactName": "${version}/${name}-${version}-${os}-${arch}.${ext}",
   "directories": {
     "buildResources": "src/assets",
@@ -31,7 +25,7 @@
   ],
   "protocols": [
     {
-      "name": "Mattermost",
+      "name": "mattermost",
       "schemes": [
         "mattermost"
       ]
@@ -107,8 +101,8 @@
     "entitlements": "./entitlements.mac.plist",
     "entitlementsInherit": "./entitlements.mac.plist",
     "extendInfo": {
-      "NSMicrophoneUsageDescription": "Microphone access may be used by Mattermost plugins, such as Jitsi video conferencing.",
-      "NSCameraUsageDescription": "Camera access may be used by Mattermost plugins, such as Jitsi video conferencing.",
+      "NSMicrophoneUsageDescription": "请允许本程序访问您的麦克风.",
+      "NSCameraUsageDescription": "请允许本程序访问您的摄像头",
       "LSFileQuarantineEnabled": true
   }
   },
@@ -163,7 +157,7 @@
         ]
       }
     ],
-    "publisherName": "CN=\"Mattermost, Inc.\", O=\"Mattermost, Inc.\", L=Palo Alto, S=California, C=US"
+    "publisherName": "CN=\"Weidiguo, Inc.\", O=\"Weidiguo, Inc.\", L=Guangzhou, S=Guangdong, C=CN"
   },
   "nsis": {
     "artifactName": "${version}/${name}-setup-${version}-win.${ext}"

@@ -21,15 +21,26 @@ import {BuildConfig} from 'types/config';
  * @prop {[]} allowedProtocols - Defines which protocols should be automatically allowed
  */
 const buildConfig: BuildConfig = {
-    defaultTeams: [/*
-    {
-      name: 'example',
-      url: 'https://example.com'
-    }
-  */],
-    helpLink: 'https://docs.mattermost.com/messaging/managing-desktop-app-servers.html',
+    defaultTeams: [
+        {
+            name: '微帝国',
+            url: 'https://www.weidiguo.net',
+            order: 1,
+        },
+        {
+            name: '名称',
+            url: '链接',
+            order: 2,
+        },
+        {
+            name: '微帝国',
+            url: 'https://www.weidiguo.net',
+            order: 3,
+        },
+    ],
+    helpLink: 'https://www.weidiguo.net',
     enableServerManagement: true,
-    enableAutoUpdater: true,
+    enableAutoUpdater: false,
     managedResources: ['trusted'],
     allowedProtocols: [
         'mattermost',

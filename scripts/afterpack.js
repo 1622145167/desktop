@@ -28,7 +28,7 @@ function getAppFileName(context) {
         return 'Mattermost.exe';
     case 'darwin':
     case 'mas':
-        return 'Mattermost.app';
+        return '微帝国.app';
     case 'linux':
         return context.packager.executableName;
     default:

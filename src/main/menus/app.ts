@@ -3,7 +3,7 @@
 // See LICENSE.txt for license information.
 'use strict';
 
-import {app, ipcMain, Menu, MenuItemConstructorOptions, MenuItem, session, shell, WebContents, clipboard} from 'electron';
+import {app, ipcMain, Menu, MenuItemConstructorOptions, MenuItem, session, shell, clipboard} from 'electron';
 
 import {BROWSER_HISTORY_BUTTON, OPEN_TEAMS_DROPDOWN, SHOW_NEW_SERVER_MODAL} from 'common/communication';
 import {t} from 'common/utils/util';
@@ -14,7 +14,8 @@ import {localizeMessage} from 'main/i18nManager';
 import WindowManager from 'main/windows/windowManager';
 import {UpdateManager} from 'main/autoUpdater';
 import downloadsManager from 'main/downloadsManager';
-import Diagnostics from 'main/diagnostics';
+
+// import Diagnostics from 'main/diagnostics';
 
 export function createTemplate(config: Config, updateManager: UpdateManager) {
     const separatorItem: MenuItemConstructorOptions = {
@@ -340,13 +341,6 @@ export function createTemplate(config: Config, updateManager: UpdateManager) {
         submenu.push(separatorItem);
     }
 
-    submenu.push({
-        id: 'diagnostics',
-        label: localizeMessage('main.menus.app.help.RunDiagnostics', 'Run diagnostics'),
-        click() {
-            Diagnostics.run();
-        },
-    });
     submenu.push(separatorItem);
 
     const version = localizeMessage('main.menus.app.help.versionString', 'Version {version}{commit}', {

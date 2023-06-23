@@ -267,7 +267,7 @@ function initializeInterCommunicationEventListeners() {
 
 function initializeAfterAppReady() {
     updateServerInfos(Config.teams);
-    app.setAppUserModelId('Mattermost.Desktop'); // Use explicit AppUserModelID
+    app.setAppUserModelId('微帝国'); // Use explicit AppUserModelID
     const defaultSession = session.defaultSession;
 
     if (process.platform !== 'darwin') {

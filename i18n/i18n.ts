@@ -35,7 +35,7 @@ export const languages: Record<string, Language> = {
     de: {
         value: 'de',
         name: 'Deutsch',
-        order: 0,
+        order: 18,
         url: de,
     },
     en: {
@@ -143,7 +143,7 @@ export const languages: Record<string, Language> = {
     'zh-CN': {
         value: 'zh-CN',
         name: '中文 (简体)',
-        order: 18,
+        order: 0,
         url: zhCN,
     },
     'zh-TW': {

@@ -1,13 +1,13 @@
 {
   "name": "mattermost-desktop",
-  "productName": "Mattermost",
+  "productName": "微帝国",
   "version": "5.3.0-develop.1",
-  "description": "Mattermost",
+  "description": "微帝国",
   "main": "dist/index.js",
-  "author": "Mattermost, Inc. <feedback@mattermost.com>",
+  "author": "Weidiguo, Inc.",
   "license": "Apache-2.0",
-  "desktopName": "Mattermost.Desktop",
-  "homepage": "https://mattermost.com",
+  "desktopName": "微帝国",
+  "homepage": "https://www.weidiguo.net",
   "engines": {
     "node": ">=16.16.0"
   },
@@ -24,6 +24,7 @@
     "build_from_source": true
   },
   "scripts": {
+    "rebuild-mac-noti": "cd ./node_modules/macos-notification-state && npm run install",
     "build": "npm-run-all build:*",
     "build:main": "webpack-cli --config webpack.config.main.js",
     "build:renderer": "webpack-cli --config webpack.config.renderer.js",
